@@ -1,0 +1,8 @@
+﻿.card {
+    display: flex;
+    justify-content: center;
+}
+.col-md-5 {
+    margin-left: 420px;
+    margin-top: 200px;
+}
