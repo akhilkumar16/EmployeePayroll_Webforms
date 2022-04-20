@@ -1,6 +1,10 @@
 ﻿.card {
     display: flex;
     justify-content: center;
+    top: 0px;
+    left: 0px;
+    height: 243px;
+    width: 1850px;
 }
 .col-md-5 {
     margin-left: 420px;

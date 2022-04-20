@@ -127,8 +127,10 @@
     <Content Include="Styles\Login.css" />
     <Content Include="Styles\Resetpassword.css" />
     <Content Include="Styles\Signup.css" />
+    <Content Include="WebForms\EmployeePayroll.aspx" />
+    <Content Include="WebForms\Error.aspx" />
     <Content Include="WebForms\Forgotpassword.aspx" />
-    <Content Include="WebForms\Home.aspx" />
+    <Content Include="WebForms\Homepage.aspx" />
     <Content Include="WebForms\Login.aspx" />
     <Content Include="WebForms\Resetpassword.aspx" />
     <Content Include="WebForms\signup.aspx" />
@@ -194,6 +196,20 @@
     <Compile Include="ViewSwitcher.ascx.designer.cs">
       <DependentUpon>ViewSwitcher.ascx</DependentUpon>
     </Compile>
+    <Compile Include="WebForms\EmployeePayroll.aspx.cs">
+      <DependentUpon>EmployeePayroll.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForms\EmployeePayroll.aspx.designer.cs">
+      <DependentUpon>EmployeePayroll.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForms\Error.aspx.cs">
+      <DependentUpon>Error.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForms\Error.aspx.designer.cs">
+      <DependentUpon>Error.aspx</DependentUpon>
+    </Compile>
     <Compile Include="WebForms\Forgotpassword.aspx.cs">
       <DependentUpon>Forgotpassword.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -201,12 +217,12 @@
     <Compile Include="WebForms\Forgotpassword.aspx.designer.cs">
       <DependentUpon>Forgotpassword.aspx</DependentUpon>
     </Compile>
-    <Compile Include="WebForms\Home.aspx.cs">
-      <DependentUpon>Home.aspx</DependentUpon>
+    <Compile Include="WebForms\Homepage.aspx.cs">
+      <DependentUpon>Homepage.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="WebForms\Home.aspx.designer.cs">
-      <DependentUpon>Home.aspx</DependentUpon>
+    <Compile Include="WebForms\Homepage.aspx.designer.cs">
+      <DependentUpon>Homepage.aspx</DependentUpon>
     </Compile>
     <Compile Include="WebForms\Login.aspx.cs">
       <DependentUpon>Login.aspx</DependentUpon>
@@ -232,6 +248,9 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Assets\Iconsweb\" />
+    <Folder Include="Assets\Imagesweb\" />
+    <Folder Include="Assets\Profilepicweb\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

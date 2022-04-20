@@ -4,59 +4,37 @@
     <link href="../Styles/Login.css" rel="stylesheet" />
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-md-5">
-                <div class="card">
-                    <div class="card-body">
-                        <div class="row">
-                            <div class="col">
-                                <center>
-                                    <h4>EmployeePayrollApp</h4>
-                                    <span style="margin-left: 100px;">Sign In</span>
-                                    <asp:Label class="badge badge-pill badge-info" ID="Label1" runat="server" Text="Sign In"></asp:Label>
-                                </center>
-                            </div>
-                        </div>
-                        <br>
-                        <div class="row">
-                            <div class="col">
-                                <div class="form-group">
-                                    <asp:TextBox CssClass="form-control" ID="Email" runat="server" placeholder="Email"></asp:TextBox>
-                                    <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="Email" ErrorMessage ="Email required" ForeColor="Red"></asp:RequiredFieldValidator>
-                                </div>
-                            </div>
-                        </div>
-                        <br />
-                        <div class="row">
-                            <div class="col">
-                                <div class="form-group">
-                                    <asp:TextBox CssClass="form-control" ID="password" runat="server" placeholder="Password"></asp:TextBox>
-                                    <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="password" ErrorMessage="password required" ForeColor="Red"></asp:RequiredFieldValidator>
-                                </div>
-                            </div>
-                        </div>
-                        <div>
-                            <asp:LinkButton ID="LinkButton1" runat="server">Forgot Password</asp:LinkButton>
-                        </div>
-                        <br />
-                        <div class="row">
-                            <div class="col-8">
-                                <div class="form-group">
-                                    <table>
-                                        <tr>
-                                            <asp:LinkButton ID="LinkButton2" runat="server">Create Account</asp:LinkButton>
-                                        </tr>
-                                        <tr>
-                                            <asp:Button ID="Button2" runat="server" Text="Next" Style="float: right; /* margin-left: 23px; */margin-right: -186px;"></asp:Button>
-                                        </tr>
-                                    </table>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    <div class="sec1" style="margin-left: 580px;margin-top: 120px;"> 
+    <div class="signin">
+        <h2>&ensp;&nbsp;SignIn</h2>
+    </div>
+        <div>
+            <p>&nbsp;&ensp;&emsp; to Continue To Employee PayRoll</p>
         </div>
+    <div>
+        <asp:TextBox ID="TextBox1" placeholder="Email" name="Email" runat="server" Width="300px" Height="30px"></asp:TextBox>
+
+    </div>
+        <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" ControlToValidate="TextBox1" ErrorMessage="* Email Required" ForeColor="Red"></asp:RequiredFieldValidator>
+    <br />
+    <div>
+        <asp:TextBox ID="TextBox2" placeholder="Password" name="Password" runat="server" Width="300px" TextMode="Password" Height="30px"></asp:TextBox>
+    </div>
+        <asp:RequiredFieldValidator ID="RequiredFieldValidator4" runat="server" ControlToValidate="TextBox2" ErrorMessage="* Password Required" ForeColor="Red"></asp:RequiredFieldValidator>
+    <br />
+    <div>
+        <asp:CheckBox ID="CheckBox1" runat="server" Text="Remember me" />  
+        &ensp;&nbsp;&emsp;&emsp; 
+        <asp:LinkButton ID="LinkButton1" runat="server" Font-Underline="True" CssClass="text-decoration-none">Forgot Password?</asp:LinkButton>
+    </div>
+        <br />
+        <div>
+        <strong>or</strong>&nbsp; <a href="SignUp.aspx" Class="text-decoration-none" >Create account</a> &emsp;&ensp;                           
+        <asp:Button ID="btnLogin" runat="server" class="btn btn-primary" Text="LOGIN" Width="100px" Height="38px" OnClick="btnLogin_Click" />
+        <div>
+             <asp:Label ID="Label1" runat="server"></asp:Label>
+        </div>          
+
+    </div>
     </div>
 </asp:Content>

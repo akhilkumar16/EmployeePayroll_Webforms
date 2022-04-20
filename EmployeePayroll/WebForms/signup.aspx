@@ -5,7 +5,7 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <div class="container-fluid">
-        <div class="row">
+        <div class="row" style="margin-left: 480px;margin-top: 120px;">
             <div class="col-md-5">
                 <div class="card">
                     <div class="card-body">
@@ -22,14 +22,14 @@
                         <div class="row">
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <asp:TextBox CssClass="form-control" ID="FirstName" runat="server" placeholder="First Name"></asp:TextBox>
-                                    <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="FirstName" ErrorMessage="First name required" ForeColor="Red"></asp:RequiredFieldValidator>
+                                    <asp:TextBox CssClass="form-control" ID="firstNameTextBox" runat="server" placeholder="First Name"></asp:TextBox>
+                                    <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="firstNameTextBox" ErrorMessage="First name required" ForeColor="Red"></asp:RequiredFieldValidator>
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <asp:TextBox CssClass="form-control" ID="LastName" runat="server" placeholder="Last Name"></asp:TextBox>
-                                    <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="LastName" ErrorMessage="Last name required" ForeColor="Red"></asp:RequiredFieldValidator>
+                                    <asp:TextBox CssClass="form-control" ID="lastNameTextBox" runat="server" placeholder="Last Name"></asp:TextBox>
+                                    <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="lastNameTextBox" ErrorMessage="Last name required" ForeColor="Red"></asp:RequiredFieldValidator>
                                 </div>
                             </div>
                         </div>
@@ -37,8 +37,8 @@
                         <div class="row">
                             <div class="col">
                                 <div class="form-group">
-                                    <asp:TextBox CssClass="form-control" ID="username" runat="server" placeholder="Username"></asp:TextBox>
-                                    <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" ControlToValidate="username" ErrorMessage="username required" ForeColor="Red"></asp:RequiredFieldValidator>
+                                    <asp:TextBox CssClass="form-control" ID="emailTextBox" runat="server" placeholder="Username"></asp:TextBox>
+                                    <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" ControlToValidate="emailTextBox" ErrorMessage="username required" ForeColor="Red"></asp:RequiredFieldValidator>
                                     <div>
                                         <span>You can use letters,numbers and periods</span>
                                     </div>
@@ -49,8 +49,8 @@
                         <div class="row">
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <asp:TextBox CssClass="form-control" ID="password" runat="server" placeholder="Password" TextMode="Password"></asp:TextBox>
-                                    <asp:RequiredFieldValidator ID="RequiredFieldValidator4" runat="server" ControlToValidate="password" ErrorMessage="password required" ForeColor="Red"></asp:RequiredFieldValidator>
+                                    <asp:TextBox CssClass="form-control" ID="passwordTextBox" runat="server" placeholder="Password" TextMode="Password"></asp:TextBox>
+                                    <asp:RequiredFieldValidator ID="RequiredFieldValidator4" runat="server" ControlToValidate="passwordTextBox" ErrorMessage="password required" ForeColor="Red"></asp:RequiredFieldValidator>
                                 </div>
                             </div>
                             <div class="col-md-6">
@@ -67,7 +67,7 @@
                         <div class="row">
                             <div class="col-md-6">
                                 <asp:CheckBox ID="CheckBox1" runat="server" placeholder="show password" AutoPostBack="True" OnCheckedChanged="CheckBox1_CheckedChanged" Text="Show Password"></asp:CheckBox>
-                            </div>
+                                </div>
                         </div>
                         <div class="row">
                             <div class="col-8">
