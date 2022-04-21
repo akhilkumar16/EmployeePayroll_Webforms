@@ -17,7 +17,7 @@ SELECT
     ERROR_MESSAGE() AS ErrorMessage;
 END CATCH  
 select*from usertable
-create procedure sp_Login(
+alter procedure sp_Login(
 @Email varchar(50),
 @password varchar(50)
 )
@@ -37,7 +37,7 @@ Raiserror('password is incorrect',16,1)
 end
 else
 begin
-select * from usertable where Email = @Email and password = @password
+select * from employee_webform ;
 end
 end
 create table employee_webform(
@@ -101,6 +101,8 @@ ERROR_LINE() as ErrorLine,
 ERROR_MESSAGE() as ErrorMessage;
 end catch
 select * from employee_webform 
+select*from usertable
+exec sp_Login 'sachin@gmail.com','Reset@123'
 create procedure GetPayRoleService
 as 
 begin try
@@ -122,6 +124,38 @@ create procedure UpdatePayRoleService
 as 
 begin try
 update employee_webform set BasicPay=@BasicPay where @Emp_name =@Emp_name 
+end try
+begin catch
+select
+ERROR_NUMBER() as ErrorNumber,
+ERROR_STATE() as ErrorState,
+ERROR_PROCEDURE() as ErrorProcedure,
+ERROR_LINE() as ErrorLine,
+ERROR_MESSAGE() as ErrorMessage;
+end catch
+insert into employee_webform values ('virat','150000','2022-04-19','M','2525252525','abc','Sports','80000','1500','2500','1500','180000')
+create table EmployeeForm(
+Name varchar(50),
+profileimage varchar(250),
+gender varchar(1),
+department varchar(50),
+salary float,
+Notes varchar(250),
+)
+select*from EmployeeForm
+create procedure sp_Addemployee(
+    @Name varchar(100),
+    @profileimage varchar(250),
+	@gender varchar(1),
+	@department varchar(50),
+	@salary float,
+	@Notes varchar(250)
+)
+as 
+begin try
+insert into EmployeeForm values(@Name,@profileimage,@gender,@department,@salary,@Notes)
+insert into EmployeeForm values('test','string','M','Hr','500000','test')
+
 end try
 begin catch
 select

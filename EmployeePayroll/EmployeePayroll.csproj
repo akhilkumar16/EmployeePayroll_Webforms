@@ -122,8 +122,8 @@
     <Content Include="Content\bootstrap-theme.min.css.map" />
     <Content Include="Content\bootstrap-theme.css.map" />
     <Content Include="EmployeePayroll.Master" />
+    <Content Include="Styles\EmployeePayroll.css" />
     <Content Include="Styles\Forgotpassword.css" />
-    <Content Include="Styles\Home.css" />
     <Content Include="Styles\Login.css" />
     <Content Include="Styles\Resetpassword.css" />
     <Content Include="Styles\Signup.css" />
