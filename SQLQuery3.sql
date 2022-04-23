@@ -37,7 +37,7 @@ Raiserror('password is incorrect',16,1)
 end
 else
 begin
-select * from employee_webform ;
+select * from EmployeeForm ;
 end
 end
 create table employee_webform(
@@ -165,3 +165,27 @@ ERROR_PROCEDURE() as ErrorProcedure,
 ERROR_LINE() as ErrorLine,
 ERROR_MESSAGE() as ErrorMessage;
 end catch
+create procedure sp_update
+(
+	@Name varchar(100),
+	@Profileimage varchar(100),
+	@gender varchar(1),
+	@department varchar(100),
+	@salary float,
+	@Notes varchar(100)
+)
+as 
+begin try
+update EmployeeForm set Name=@Name,profileimage=@Profileimage,gender=@gender,department=@department,salary=@salary,Notes=@Notes where Name=@Name;
+end try
+begin catch
+select
+ERROR_NUMBER() as ErrorNumber,
+ERROR_STATE() as ErrorState,
+ERROR_PROCEDURE() as ErrorProcedure,
+ERROR_LINE() as ErrorLine,
+ERROR_MESSAGE() as ErrorMessage;
+end catch
+insert into EmployeeForm values('Srh','image','M','Hr','500000','orangearmy')
+exec sp_update
+DELETE FROM EmployeeForm WHERE Name='Srh';

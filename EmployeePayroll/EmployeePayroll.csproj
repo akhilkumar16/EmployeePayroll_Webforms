@@ -123,16 +123,13 @@
     <Content Include="Content\bootstrap-theme.css.map" />
     <Content Include="EmployeePayroll.Master" />
     <Content Include="Styles\EmployeePayroll.css" />
-    <Content Include="Styles\Forgotpassword.css" />
+    <Content Include="Styles\Homepage.css" />
     <Content Include="Styles\Login.css" />
-    <Content Include="Styles\Resetpassword.css" />
     <Content Include="Styles\Signup.css" />
     <Content Include="WebForms\EmployeePayroll.aspx" />
     <Content Include="WebForms\Error.aspx" />
-    <Content Include="WebForms\Forgotpassword.aspx" />
     <Content Include="WebForms\Homepage.aspx" />
     <Content Include="WebForms\Login.aspx" />
-    <Content Include="WebForms\Resetpassword.aspx" />
     <Content Include="WebForms\signup.aspx" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\bootstrap.js" />
@@ -210,13 +207,6 @@
     <Compile Include="WebForms\Error.aspx.designer.cs">
       <DependentUpon>Error.aspx</DependentUpon>
     </Compile>
-    <Compile Include="WebForms\Forgotpassword.aspx.cs">
-      <DependentUpon>Forgotpassword.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="WebForms\Forgotpassword.aspx.designer.cs">
-      <DependentUpon>Forgotpassword.aspx</DependentUpon>
-    </Compile>
     <Compile Include="WebForms\Homepage.aspx.cs">
       <DependentUpon>Homepage.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -230,13 +220,6 @@
     </Compile>
     <Compile Include="WebForms\Login.aspx.designer.cs">
       <DependentUpon>Login.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="WebForms\Resetpassword.aspx.cs">
-      <DependentUpon>Resetpassword.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="WebForms\Resetpassword.aspx.designer.cs">
-      <DependentUpon>Resetpassword.aspx</DependentUpon>
     </Compile>
     <Compile Include="WebForms\signup.aspx.cs">
       <DependentUpon>signup.aspx</DependentUpon>
